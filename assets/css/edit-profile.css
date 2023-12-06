@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.navbar {
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.logo {
+    background: #E6E8EC;
+    border-radius: 90px;
+    padding: 12px 5px 12px 24px;
+    transition: all .3s ease-in-out;
+
+}
+
+.logo a {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.logo:hover {
+    background: #444444;
+}
+
+.logo:hover a {
+    color: white;
+}
+
+.nav-unq {
+    margin-left: 20px;
+}
+
+.nav-l {
+    border-left: solid 1px #E6E8EC;
+    margin-left: 40px;
+}
+
+.nav-l li a {
+    color: #777E90;
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+.nav-l li a:hover {
+    color: #444444;
+}
+
+.navbar {
+    border-bottom: solid 1px #E6E8EC;
+}
+
+/* dashboard */
+
+.dashboard .row .left-col {
+    height: 89.8vh;
+    background: #FCFCFD;
+    border-right: solid 1px #444444;
+}
+
+.profile-image {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-image h5 {
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.manage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 50px 0;
+}
+
+.manage-btn {
+    line-height: 1rem;
+    display: inline-block;
+    width: 6.13rem;
+    height: 2.31rem;
+    color: black;
+    left: 1rem;
+    margin-top: -2rem;
+    border-radius: 30px;
+    background-color: #e6e8ec ;
+    border: none;
+    width: 13.13rem;
+    height: 3.25rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.manage-btn:hover {
+    color: #e6e8ec;
+    background-color: black;
+}
+
+.edit-btn {
+    color: #e6e8ec;
+    background: black;
+}
+
+.courses-head {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 15px 0 0 10px;
+}
+
+.right-col .courses-head::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 12%;
+    background-color: #444444;
+    margin-bottom: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.student-form .row {
+    background-color: #E6E8EC;
+    border-radius: 2rem;
+    padding: 3rem 3rem 3rem 6rem;
+    margin: 2rem 5rem 0;
+}
+
+.student-form .col-sm-6 label,
+.student-form .col-sm-12 label {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    padding: 1rem 0 0.3rem;
+}
+
+.student-form .col-sm-6 input {
+    border-radius: 0.3rem;
+    border: solid 1px grey;
+}
+
+.student-form .col-sm-12 input {
+    border: solid 1px grey;
+    border-radius: 0.3rem;
+    width: 86%;
+    height: 90%;
+}
+
+.student-form .sub-btn {
+    margin-top: 4rem;
+}
+
+.student-form .sub-btn input {
+    font-weight: 700;
+    background-color: black;
+    color: #e6e8ec;
+    font-family: 'DM Sans', sans-serif;
+    padding: 10px 0;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.student-form .sub-btn input:hover {
+    background-color: #e6e8ec;
+    color: black;
+}
+
+/* responsive  */
+
+@media(max-width: 768px) {
+
+    .right-head {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .right-col .courses-head::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 50%;
+    background-color: #444444;
+    margin-bottom: 10px;
+    font-family: 'DM Sans', sans-serif;
+    }
+
+    .nav-l li .nav-unq {
+        margin: 0;
+    }
+
+    .nav-l {
+        border: none;
+    }
+
+    .profile-i {
+        margin-left: 2.4rem;
+    }
+
+    
+    .student-form .row {
+        background-color: #E6E8EC;
+        border-radius: 2rem;
+        padding: 1rem 2rem 4rem 2rem;
+        margin:20px 0 0 0;
+        }
+}
